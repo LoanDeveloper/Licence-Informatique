@@ -1,0 +1,78 @@
+public class Cuisine {
+    public static void main(String[] args) {
+        Ingredient carotte = new Ingredient("CAROTTE",26,0.20,0.20,0.98);
+        Ingredient autre = carotte;
+        Ingredient test = new Ingredient("test",23,0.20,0.28,0.90);
+        Ingredient pommedeterre = new Ingredient("POMMEDETERRE",85,18.0,0.1,1.5);
+        Ingredient carotte2 = new Ingredient("CAROTTE",27,0.21,0.21,0.99);
+        Ingredient poivron = new Ingredient("POIVRON", 20,4.6,0.2,0.9);
+
+        Plat puree = new Plat("PUREE");
+
+        System.out.println(carotte.getCalories());
+        System.out.println(carotte.getGlucide());
+        System.out.println(carotte.getLipide());
+        System.out.println(carotte.getProteine());
+        System.out.println(carotte.getNom());
+        System.out.println("-----------------");
+        System.out.println(carotte.toString());
+        System.out.println(carotte);
+        System.out.println(carotte == autre);
+        System.out.println(carotte.equals(autre));
+        System.out.println(carotte.equals(test));
+        System.out.println(carotte.equals(pommedeterre));
+        System.out.println(carotte.equals(carotte2));
+        System.out.println(carotte == carotte2);
+        System.out.println("-----------------");
+        System.out.println(puree.getNom());
+
+        puree.ajoute(carotte,200);
+        puree.ajoute(pommedeterre,500);
+        puree.ajoute(carotte,300);
+        System.out.println(puree.toString());
+        System.out.println(puree.getProteine());
+        System.out.println(puree.getIngredients());
+
+        Plat pureEpicee = new Plat("PUREEPICE",puree.getIngredients());
+
+        Plat empty = new Plat("EMPTY");
+        Plat test2 = new Plat("test2");
+
+        Ingredient pommedeterre2 = new Ingredient("POMMEDETERRE2",85,18.0,0.1,1.5);
+
+        test2.ajoute(pommedeterre,1);
+        test2.ajoute(pommedeterre2,1);
+
+        pureEpicee.ajoute(poivron,20);
+        System.out.println(pureEpicee.toString());
+        System.out.println(pureEpicee.maxCalories());
+        System.out.println(puree.maxCalories());
+        System.out.println(empty.maxCalories());
+        System.out.println(test2.maxCalories());
+
+        System.out.println(puree.richeProteine(0.5));
+        System.out.println(puree.richeProteine(1));
+        System.out.println(puree.richeProteine(10));
+
+        Panier p = new Panier(puree.getIngredients());
+        Panier p2 = new Panier(pureEpicee.getIngredients());
+
+        System.out.println(p.getPoids());
+        System.out.println(p.toString());
+        p.retire(carotte,200);
+        System.out.println(p.toString());
+
+        System.out.println(p.fusionne(p2));
+
+        System.out.println("-----------------");
+        System.out.println(puree);
+        System.out.println(p);
+        System.out.println(p.estCuisinable(puree));
+        p.ajoute(poivron,1);
+        //System.out.println(p.cuisine(puree));
+        System.out.println("------------------");
+        System.out.println(p);
+        System.out.println(p.estCuisinable(puree));
+        System.out.println(p.achete(puree));
+    }
+}
