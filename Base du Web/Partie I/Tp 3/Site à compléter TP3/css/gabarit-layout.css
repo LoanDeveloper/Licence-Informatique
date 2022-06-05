@@ -1,0 +1,40 @@
+/*** gabarit-layout.css ***/
+
+* {
+    box-sizing: border-box;
+}
+
+/* MENU PRINCIPAL PEPS*/
+.menu-principal{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MAIN */
+.corps{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MENU SECONDAIRE */
+.menu-secondaire li{
+    width: 15rem;
+}
+
+/* SECTION PRINCIPAL*/
+.principal ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.principal li{
+    text-align: center;
+}
+
+.principal li:nth-of-type(2n){
+    flex: 1 1 36%;
+}
+.principal li:nth-of-type(2n+1){
+    
+}
