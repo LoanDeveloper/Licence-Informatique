@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>THOMY Loan</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../img/icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/darktheme.js" defer></script>
+    <script src="../js/responsive.js" defer></script>
+</head>
+
+<!--BODY-->
+<body>
+<!--HEADER-->
+<header id="main_header">
+    <h2>Event Finder</h2>
+    <span class="material-icons invisible">preference</span>
+    <span class="material-icons-outlined moon">dark_mode</span>
+</header>
+
+<div id="navbar"></div>
+
+<hr>
+
+<!--MAIN-->
+<main>
+    <!--SECTION A PROPOS-->
+    <section id="a_propos">
+        <!--HEADER A PROPOS-->
+        <header id="header_a_propos">
+            <h1 class="pages">À propos</h1>
+        </header>
+
+        <!--SECTION QUI-SUIS-JE-->
+        <section id="qui">
+            <header id="header_qui_suis_je">
+                <h3>Qui suis-je :</h3>
+            </header>
+            <p class="page3">Je suis un étudiant en première année de licence informatique, ce site est le projet de fin d'année dans la matière Base du Web. J'aime beaucoup faire des sites web, c'est pourquoi j'envisage éventuellement une licence professionnelle (parcours "Développeur web full stack").</p>
+        </section>
+
+        <hr class="padding">
+
+        <!--SECTION ORGANISATION-->
+        <section id="organisation">
+            <header id="header_organisation">
+                <h3>Organisation :</h3>
+            </header>
+            <h4>Organisation des tâches :</h4>
+            <p class="page3">Pour pouvoir m'organiser lors de ce projet, j'ai directement créé un bloc note contenant les choses que je dois faire. Plus précisement une to do list organisé un trois partie (to do, doing, done). Chaque tâches inscrit dans la to do list avait sa propre priorité écrite à la fin : "!!" signifie "très important", "!" signifie "important", "*" signifie : bonus.</p>
+            <h4>Organisation du code :</h4>
+            <p class="page3">Afin de rendre le code clair, lisible et compréhensible pour moi et d'autres personnes, j'ai organisé le code javascript de la manière suivante : un retour à la ligne entre les blocs dans une fonction, deux retours à la ligne entre deux fonctions. Ensuite après un retour à la ligne, un commentaire explique qu'est-ce-que le bloc fait.</p>
+            <p class="page3">Par exemple, "//variable qui stock le compteur de favoris sur le DOM" suivi de "const cpt_DOM = document.querySelector("#favorites_counter_p").textContent;"</p>
+        </section>
+
+        <hr>
+
+        <!--SECTION A FAIRE-->
+        <section id="a_faire">
+            <header id="header_a_faire">
+                <h3>À faire :</h3>
+            </header>
+            <h4>Liste des tâches que je n'ai pas eu le temps de terminer:</h4>
+            <ul class="page">
+                <li>Ajouter le prix de l'événement</li>
+                <li>Classer les favoris par artistes</li>
+                <li>Changer le fonctionnement du dark mode (ajouter un troisième paramètre : réglage systèmes (avec logo google-font)</li>
+            </ul>
+        </section>
+    </section>
+
+    <hr>
+
+    <!--SECTION PROBLEMES-->
+    <section id="problems">
+        <header id="header_problems">
+            <h3>Problèmes recontrés :</h3>
+        </header>
+
+        <section id="cookies">
+            <header id="header_cookies">
+                <h4>Cookies</h4>
+            </header>
+            <p class="page3">J'ai compris que pour faire certaines fonctionnalité dans mon site web, il fallait que j'utilise des cookies pour stocker des informations. Car je voulais que mon JavaScript interagisse avec le DOM de toutes mes pages HTML, j'ai donc abandonné certaines idées. Par exemple, je voulais que le thème du site soit par défaut choisi en fonction du thème par défaut de l'appareil qui se connecte au site. Sauf que dès que l'on clique sur une autre page du site.</p>
+        </section>
+    </section>
+</main>
+
+<hr class="last_hr invisible">
+
+<!--FOOTER-->
+<footer>
+    <!--NAVBAR-->
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="page2.html">Search</a></li>
+            <li><a href="page3.html">À propos</a></li>
+        </ul>
+    </nav>
+
+    <p>© 2022 THOMY Loan</p>
+</footer>
+</body>
+</html>

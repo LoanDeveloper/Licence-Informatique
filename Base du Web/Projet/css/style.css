@@ -1,0 +1,334 @@
+/*----VARIABLES COULEURS----*/
+:root{
+    --texte: #333;
+    --background: #f1f1f1;
+    --background-section: #f1f1f1;
+    --background-transparent: #f1f1f1d8;
+    --darkmode: #333;
+}
+/*----ALL----*/
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    width: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+/*----PAGE 1----*/
+.header_page1{
+    background-color: black;
+    color: #f1f1f1;
+    width: auto;
+}
+.page1 a,img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*----ALL / PAGE 2 / PAGE3----*/
+
+
+/*-----NAV-BAR------*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+nav li{
+    padding: 1rem;
+    text-align: center;
+}
+
+nav li a{
+    color:var(--texte);
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    bottom:0;
+    background-color: var(--background-transparent);
+    width:100%;
+}
+
+nav a:hover{
+    background-color: var(--background-color);
+}
+
+nav.defix{
+    position:static;
+    bottom:100%;
+}
+
+nav.animation a:hover{
+    font-size: 3rem;
+    font-weight: 900;
+    transition: all 0.4s ease-out;
+}
+/*----HEADER----*/
+#main_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+header h2 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.header_favoris{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#favorites_counter{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+/*----BODY----*/
+body {
+    font-size: 1.4rem;
+    font-family: Roboto;
+    color:var(--texte);
+    background-color: var(--background);
+}
+
+.header_img img{
+    background-color: black;
+    width:100%;
+    height:25rem;
+}
+
+img {
+    object-fit:cover
+}
+
+
+hr{
+    color:rgb(190, 190, 190);
+    margin-top:1.5rem;
+    width: auto;
+}
+
+.header_hr {
+    margin-top: 2rem;
+    width: 90%;
+}
+
+/*----TEXT----*/
+
+p.page3 {
+    display: block;
+    flex-wrap: wrap;
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-inline-end: 0rem;
+    font-weight: lighter;
+    line-height: 150%;
+    text-indent: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 95%;
+}
+#erreurAjax{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    text-indent: 0%;
+    font-weight: bold;
+    color: #c70000;
+}
+
+h1.pages {
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.h1_page1 {
+    font-weight: bold;
+    font-size: 4.3rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Lora';
+}
+
+main h2{
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.h2_page1{
+    text-align: left;
+    line-height: 4.2rem;
+    font-size: 2.75rem;
+    padding-left:2rem;
+    padding-right:5rem;
+}
+h3{
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+h4{
+    padding: 1.5rem 1.5rem 1rem 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+h4.acceuil{
+    padding: 1.5rem 1.5rem 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+ul.page{
+    width: auto;
+    padding-right: 2rem;
+    font-weight: lighter;
+    line-height: 150%;
+    text-indent: 7.5%;
+    text-align: justify;
+    text-justify: auto;
+    list-style: inside;
+}
+
+ul.page li{
+    padding-left:1rem;
+}
+/*----BODY----*/
+#bouton_rechercher {
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color: rgba(46, 171, 73, 0.58);
+    border: solid #000000 2px;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+    font-weight: bold;
+}
+
+#search-button{
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color: rgba(46, 171, 73, 0.58);
+    border: solid #000000 2px;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3rem;
+}
+/*----SECTIONS----*/
+sections{
+    padding: 0.5rem;
+    width: auto;
+    background-color: var(--background-section);
+}
+
+#section_accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+#formulaire{
+    padding-top:2rem;
+}
+
+#problems{
+    padding-bottom: 5vh;
+}
+
+.favoris{
+    padding-bottom: 1vh;
+}
+/*----ARTICLE----*/
+
+.article{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.invisible{
+    display: none;
+}
+
+.en_savoir_plus_bouton{
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background-color: rgba(46, 171, 73, 0.58);
+    border: solid #000000 2px;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.date_ville{
+    display:flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.date_ville header{
+    padding-bottom: 0.5rem;
+}
+
+#artist_input{
+    display: inline-block;
+    width: 25vw;
+}
+#artist_input::placeholder{
+    display: flex;
+    flex-wrap: nowrap;
+    opacity: 0.25;
+}
+/*----ICONS----*/
+.material-icons-outlined.star{
+    vertical-align: middle;
+    color: #ffd500;
+}
+.material-icons-outlined.heart{
+    vertical-align: middle;
+    color: rgb(140, 0, 13);
+    font-size: 1.4rem;
+}
+.material-icons-outlined.moon{
+    padding: 0rem;
+}
+/*----FOOTER----*/
+footer p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}

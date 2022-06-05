@@ -1,0 +1,9 @@
+dark-mode :
+dark0 : #303238 (backgroundcolor)
+dark1 : #202025 (fond articles + navbar)
+
+white: #f8f9fa (à tester pour les caractères)
+
+grey: #454c52 (pour les hr)
+
+light-mode:

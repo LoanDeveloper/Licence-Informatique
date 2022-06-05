@@ -1,0 +1,49 @@
+to do:
+!!:
+
+!:
+
+
+*:
+
+- classer les favoris par artistes 
+- Ajouter le prix *
+- classer les favoris par artistes * & !
+- Changer les couleurs pour le dark mode (voir bloc note) *
+- Changer les couleurs de fond des sections *
+- Changer le dark mode (ajouter un troisième paramètre : réglage système (avec logo google)) *
+- Changer la couleur du bouton hover *
+
+
+doing:
+
+- Rendre tout les id et les classes compréhensibles (nom, type : id ou class) : ex: changer la classe de la section result en id, rendre le code clean (fin) !!
+
+
+done:
+
+- Ajouter la suppression de la recherche à chaque nouvelle recherche !! : facile a faire (foreach de la section puis remove all)
+- faire la page d'acceuil qui présente le site !! (inspi sur bandsintown) !!
+- ajouter la fonctionnalité de mettre en favoris des events (avec une police d'icone : matérial icons...) --> sur la meme page !! 
+- ajouter la fonctionnalité de changer le thème du site (dark mode) *
+- régler soucis responsive design !!
+- Ajouter l'erreur sur la page (en plus de la console) quand on tape un artiste avec la mauvaise orthographe (facile) !
+- trouver une idée pour la troisième page !! : à propos
+- faire la troisieme page : expliquer l'organisation et celle du code(sauts de lignes avec les commentaires), lien github !!
+
+
+
+!! = très important
+! = important 
+* = bonus
+
+
+main pbs:
+-cookies pour page favoris
+-cookies pour dark mode
+
+
+Organisation:
+-sauts de lignes : 2 lignes entre les fonctions, 1 lignes dans la fonction entre les blocs 
+-mise en forme html/css : le main est composé de sections (favoris et search), composés (d'articles), composé ...
+-to do list

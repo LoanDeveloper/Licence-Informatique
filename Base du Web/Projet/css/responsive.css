@@ -1,0 +1,63 @@
+/*----VARIABLES COULEURS----*/
+:root{
+    --texte: #333;
+    --background: #f1f1f1;
+    --background-section: #f1f1f1;
+}
+
+/*Adaptation au format pc*/
+@media screen and (min-width: 500px) {
+    body{
+        width: 80rem;
+        margin: 0 auto;
+        padding: 0rem;
+    }
+    #artist_input{
+        width: 15vw;
+    }
+
+    hr.padding{
+        width: 79rem;
+    }
+    p.page3{
+        text-indent: 5%;
+    }
+
+    .last_hr{
+        display: block;
+    }
+
+    /*----MAIN HEADER (navbar)----*/
+
+    #main_header.page1{
+        background-color: var(--background);
+    }
+
+    #main_header.page1 h1{
+        color: var(--texte);
+    }
+
+    /*----HEADER PAGE 1----*/
+
+    /*--PARENT--*/
+    .header_page1{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*--CHILDRENS--*/
+
+    /*-TEXT-*/
+    .header_text_page1{
+        /*padding-left: 5rem;*/
+        flex-basis: 65%;
+    }
+    /*-IMG-*/
+    .header_a_page1{
+    }
+    .header_a_page1 img{
+        align-items: center;
+        object-fit: cover;
+        height: 100%;
+    }
+}

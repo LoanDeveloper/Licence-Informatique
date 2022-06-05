@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>THOMY Loan</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../img/icon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="../js/axios.min.js"></script>
+    <script src="../js/comportements.js" defer></script>
+    <script src="../js/darktheme.js" defer></script>
+    <script src="../js/responsive.js" defer></script>
+</head>
+
+<!--BODY-->
+<body>
+
+<!--HEADER-->
+<header id="main_header">
+    <h2>Event Finder</h2>
+    <span class="material-icons invisible">preference</span>
+    <span class="material-icons-outlined moon">dark_mode</span>
+</header>
+
+<div id="navbar"></div>
+
+<hr>
+
+<!--MAIN-->
+<main>
+    <!--SECTION SEARCH-->
+    <section id="search">
+        <!--HEADER SECTION SEARCH--->
+        <header>
+            <h1 class="pages">Recherchez un artiste</h1>
+        </header>
+
+        <!--SECTION FORMULAIRE-->
+        <section id="formulaire">
+            <form method="post">
+                <label>Veuillez saisir le nom : </label>
+                <input type="text" placeholder="Artiste" id="artist_input">
+                <span id="bouton_rechercher">Rechercher</span>
+            </form>
+        </section>
+
+        <!--SECTION ERREUR AJAX-->
+        <section id="section_erreur_ajax">
+            <p id="erreurAjax"></p>
+        </section>
+
+        <h3 id="artistName"></h3>
+
+        <!--SECTION RESULT-->
+        <section id="result">
+            <!--ARTICLE INVISIBLE DE REFERENCE-->
+            <article class="article invisible">
+                <section class="date_ville">
+                    <header class="date">Date</header>
+                    <p class="lieu">lieu, ville</p>
+                </section>
+                <section class="en_savoir_plus">
+                    <a href="https://google.com" class="en_savoir_plus_bouton">En savoir plus</a>
+                    <span class="material-icons-outlined star yellow_star">star_outline</span>
+                </section>
+            </article>
+        </section>
+
+    </section>
+
+    <hr>
+
+    <!--SECTION FAVORIS-->
+    <section class="favoris">
+        <header class="header_favoris">
+            <h2>Mes favoris :</h2>
+            <section id="favorites_counter">
+                <p id="favorites_counter_p">0&nbsp</p>
+                <span class="material-icons-outlined star fix">star</span>
+            </section>
+        </header>
+
+        <!--SECTION FAVORIS RESULT-->
+        <section id="favoris_result">
+
+        </section>
+    </section>
+</main>
+
+<hr class="last_hr invisible">
+
+<!--FOOTER-->
+<footer>
+    <!--NAVBAR-->
+    <nav id="menu">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="page2.html">Search</a></li>
+            <li><a href="page3.html">À propos</a></li>
+        </ul>
+    </nav>
+
+    <p>© 2022 THOMY Loan</p>
+</footer>
+</body>
+</html>
