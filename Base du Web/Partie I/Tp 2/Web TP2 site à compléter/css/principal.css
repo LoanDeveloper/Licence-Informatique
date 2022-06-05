@@ -1,0 +1,143 @@
+/**** look.css ***/
+body{
+    --couleur-fond-fonce :#315F4A ;
+    --couleur-texte-sur-fond-fonce : #F7F7F7 ;
+    --couleur-texte-sur-fond-clair : #333 ;
+/*    --couleur-fond-menu-hover : #1F2F1D ;*/
+/*     --couleur-fond-menu-actif :#507D60 ;*/
+   
+    font-family: arial ;
+}
+/*** Règles générales  ***/
+
+strong{ font-weight: bold ;}
+
+*, *::before, *::after{ box-sizing: border-box ;}
+
+
+/**** Header ****/
+.entete-page{
+    background-image: url(../images/bgHeader.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 2rem;
+}
+
+.entete-page h1{
+    font-size: 20vw;
+    color: var(--couleur-texte-sur-fond-fonce);
+    text-align: center;
+}
+.entete-page h2{
+    font-size: 3vh;
+    text-align: center;
+    color: var(--couleur-texte-sur-fond-fonce);
+    padding: 0.5rem;
+}
+.entete-page h1,h2{
+}
+/****** sections **********/
+section{
+    margin-bottom: 0rem;
+}
+section>header h2{
+    background-color: var(--couleur-fond-fonce);
+    color: var(--couleur-texte-sur-fond-fonce);
+    padding: 0.7rem;
+}
+
+.preoccupations article{
+    margin:1rem;
+}
+
+.li1{
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+.ul2{
+    list-style-type: circle;
+    padding-left: 2rem;
+}
+/*** Références ************/
+
+
+
+
+/**** solutions ******/
+
+.solutions img{
+    width: 100%;
+    height: calc(100vw * 9 / 16);
+    max-height: 10rem;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.solutions figcaption{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+/*** bouton contact ******/
+.button{
+    text-align: center;
+}
+.button a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--couleur-texte-sur-fond-fonce);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--couleur-fond-fonce);
+}
+
+
+/****** Footer *******/
+footer{
+    /* Positionnement flex pour placer les deux fils du footer côte à côte */  
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    background-color: var(--couleur-fond-fonce);
+    padding: 0.7rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--couleur-texte-sur-fond-fonce);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+/***** PAGE CONTACTS ******/
+/* Ici on indique les spécificités de la page contact
+    on aurait aussi pu créer une feuille de style supplémentaire
+    Dans ce cas, la page contact serait liée à la feuil de style principal.css et contact.css */ 
+
+
+/**** Coordonnées *****/
+.coord ul{
+    list-style-type: circle;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.coord {
+    margin-bottom: 17.5vh;
+}
+/***** Carte ****/
+iframe{
+    width: 100vw;
+}
+
+
+/*** Formulaire ****/
+
+form {
+    display: block;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
