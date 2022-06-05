@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    padding: 1rem;
+}
+/*HEADER*/
+header h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+header li{
+    padding: 0.5rem;
+}
+
+/*SECTION*/
+section h2,h3{
+    font-size: 1rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+section p{
+    color: rgb(82, 82, 82);
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+hr{
+    color:rgb(190, 190, 190);
+    margin-top:1.5rem;
+}
+
+/* CARTES */
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(82, 82, 82);
+}
+h3{
+    display: none;
+}
+.cartes li{
+    width: 45%;
+}
+.cartes img{
+    max-width: 100%;
+    width:100%;
+    height: auto;
+}
+.cartes figcaption{
+    text-align: end;
+    padding: 0.5rem;
+}
+
+/* FOOTER */
+footer{
+    color: rgb(82, 82, 82);
+    text-align: end;
+}

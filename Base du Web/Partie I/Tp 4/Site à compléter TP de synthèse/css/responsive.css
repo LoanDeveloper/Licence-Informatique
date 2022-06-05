@@ -1,0 +1,28 @@
+@media screen and (min-width: 40rem){
+    header ul{
+        display:flex;
+    }
+}
+@media screen and (min-width: 50rem) {
+    body{
+        width: 45rem;
+        margin: 0 auto;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cartes li{
+        flex: 0 0 30%;
+    }
+    .principale article {
+        display: flex;
+        justify-content: space-between;
+    }
+    .principale article p{
+        flex: 0 0 33%;
+    }
+    h3{
+        display: block;
+    }
+}
