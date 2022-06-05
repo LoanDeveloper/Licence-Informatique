@@ -1,0 +1,136 @@
+/* look.css : mise en formes individuelles */
+
+/* ALL */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    font-family: Arial,Calibri, sans-serif;
+}
+
+/* En-tête principal*/
+body>header{
+    height: 20vh;
+    background: url(../images/UNF_GCASsite_sustainpage_hero.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+hgroup{
+    display: inline-block;
+    border: 1px solid;
+    border-color: rgba(163, 187, 201, 0.7);
+    background-color: rgba(38, 45, 55, 0.4);
+    padding:2rem;
+    margin:2rem;
+    
+}
+
+/* Textes */
+h1{
+    font-size: 3rem;
+    color: #eee;
+}
+h2{
+    font-size: 2rem;
+    color: #dcb872;
+    padding:1rem;
+}
+main>h2{
+    color:#0c2727;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    color:#eee;
+}
+
+Strong{
+    font-weight:bold;
+}
+
+/*Menu*/
+nav ul{
+    display:flex;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #174b60;
+}
+
+nav li a{
+    display: block;
+    color: #eee;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #dcb872;
+    background-color: #0c2727;
+}
+
+/*Articles*/
+article h3{
+    background-color: rgba(163, 187, 201, 0.7);
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+article>header{
+    height: 12rem;
+    background-size: cover;
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+}
+article:nth-of-type(1) header{
+    background: url(../images/aurore_boreale.jpg) no-repeat left;
+    
+}
+
+article:nth-of-type(2) header{
+    background: url(../images/chuteDEau.jpg) no-repeat left;
+}
+
+article:nth-of-type(3) header{
+    background: url(../images/sapin.jpg) no-repeat left;
+}
+
+article p{
+    letter-spacing: 1px;
+    text-align: justify;
+    color:#0c2727;
+    margin: 0.7rem;
+    padding-left:1rem;
+}
+
+/*Button*/
+.button{
+    display: inline-block;
+    background-color: rgb(18, 57, 73);
+    color: #eee;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+/*Footer*/
+body>footer{
+    background-color: #174b60;
+    padding: 1rem;
+}
+body>footer a{
+    color: #eee;
+    text-decoration: none;
+}
+body>footer a:hover{
+    text-decoration: underline;
+}

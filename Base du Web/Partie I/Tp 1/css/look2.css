@@ -1,0 +1,201 @@
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    /*** couleurs ****/
+    
+    .couleur {
+        color: #174B60;
+        color: #0C2727;
+        color: #DBDDE6;
+        color: #A3BBC9;
+        color: #7C969F;
+        color: #dcb872;
+    }
+    
+    body {
+        font-family: Arial, Calibri, sans-serif;
+        background: #FFF;
+    }
+    /******** HEADER ************/
+    
+    .entete-principal {
+        background: url(../images/UNF_GCASsite_sustainpage_hero.jpg) no-repeat center center;
+        background-size: cover;
+        color: #FFF;
+        padding: 3rem;
+        text-align: center;
+    }
+    
+    .entete-principal .titres {
+        background-color: rgba(38, 45, 55, 0.3);
+        border: 1px solid #7C969F;
+        padding: 2rem;
+        margin: 2rem;
+        backdrop-filter: blur(10px);
+    }
+    
+    h1 {
+        font-size: 6vw;
+        color: #EEE;
+        margin-bottom: 1rem;
+    }
+    
+    .entete-principal .titres .nom {
+        white-space: nowrap;
+        font-size: 8vw;
+    }
+    
+    .entete-principal .titres h2 {
+        color: #dcb872;
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+    /*********** MENU ******************/
+    
+    .menu-principal,
+    .footer-principal {
+        background: #174B60;
+    }
+    
+    .menu-principal a {
+        font-size: 2rem;
+        color: #EEE;
+        text-decoration: none;
+        display: block;
+        padding: 1rem 2rem;
+    }
+    
+    .menu-principal li.actif a {
+        background-color: #0C2727;
+        color: #dcb872;
+    }
+    /*************** Main ***************/
+    
+    main {
+        padding-top: 1rem;
+        background: #FFF;
+    }
+    
+    main>h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 0;
+        color: #0C2727;
+    }
+    /****Disposition des articles *****/
+    
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .articles article {
+        flex: 0 0 100%;
+    }
+    /****** ARTICLE ********/
+    
+    .articles article {
+        padding: 0;
+        background: #FFF;
+        color: #0C2727;
+        margin-bottom: 1rem;
+    }
+    
+    .articles article {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .articles article section.corpsArticle {
+        flex: 1;
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+    
+    .articles article:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    .articles article header {
+        background: #FFF;
+        color: #262D37;
+        height: 12rem;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .articles article:nth-of-type(1) header {
+        background-image: url(../images/aurore_boreale.jpg);
+    }
+    
+    .articles article:nth-of-type(2) header {
+        background-image: url(../images/chuteDEau.jpg);
+    }
+    
+    .articles article:nth-of-type(3) header {
+        background-image: url(../images/sapin.jpg);
+    }
+    
+    .articles article header h3 {
+        padding: 0.8rem;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+        position: relative;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #EEE;
+        background-color: rgba(163, 187, 201, 0.7);
+    }
+    
+    .articles article em {
+        font-weight: bold;
+        color: rgb(6, 20, 20);
+    }
+    
+    .articles article p {
+        padding-bottom: 0.5rem;
+        line-height: 1.8;
+        font-size: 1rem;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+    
+    .articles article footer {
+        background: none;
+    }
+    
+    .articles article footer a.suite {
+        display: inline-block;
+        margin: 0 0 1rem 2rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(18, 57, 73);
+        text-decoration: none;
+        color: #FFF;
+        border-radius: 3px;
+        font-size: 1.2rem;
+    }
+    /*** Footer principal *******/
+    
+    .footer-principal {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+    }
+    
+    .footer-principal a {
+        color: #EEE;
+        text-decoration: none;
+    }
+    
+    .footer-principal a:hover {
+        text-decoration: underline;
+    }
