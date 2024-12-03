@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="accueil">
+        <section>
+            <p class="slogan">Avec Vente facile, acheter n'a jamais été aussi simple !</p>
+        </section>
+
+        <hr>
+        
+        <section class="categories">
+            <h3>Découvrez nos catégories !</h3>
+            <section>
+                {% for c in categories %}
+                    <a href="{{ path('app_produits2', { 'id' : c.id }) }}">{{ c.nom }}</a>
+                {% endfor %}
+            </section>
+        </section>
+
+        <hr>
+
+        <section class="raison">
+            <h3>3 bonnes raisons de faire appel à nous :</h3>
+            <ul>
+                <li>Paiement en 4x</li>
+                <li>Livraison Express</li>
+                <li>Retours simples et rapides </li>
+            </ul>
+        </section>
+    </section>
+{% endblock %}

@@ -1,0 +1,7 @@
+Site de ventes en ligne : 
+
+4 entités :
+	- Produits (nom, description, prix, image) : lié à une catégorie, lié à 1 ou plusieurs commentaires
+	- Catégories (nom, description) : lié à 1 ou plusieurs produits
+	- Commentaire (texte, note, date, produit)
+	- Tag (nom, produits)

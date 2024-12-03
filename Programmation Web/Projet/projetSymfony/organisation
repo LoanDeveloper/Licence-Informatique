@@ -1,0 +1,22 @@
+Site de ventes en ligne : 
+
+4 entités :
+	- Produit (nom, description, prix, image, catégorie) : lié à une catégorie, lié à 1 ou plusieurs commentaires
+	- Catégorie (nom, description) : lié à 1 ou plusieurs produits
+	- Commentaire (texte, note, date, produit) : lié à 1 produit
+	- Tag (nom, produits) : lié à 1 ou pluisieurs produits
+
+nom : Vente Facile
+
+menu :
+    - Acceuil
+    - Nos produits
+    - Vendre un produit         --> ajout produit, avec upload image
+    - A propos ?
+
+
+commandes à lancées :
+    - bin/console doctrine:database:create
+    - download driver database
+    - mettre user user
+    - insert SQL file to fill database (t5.sql)

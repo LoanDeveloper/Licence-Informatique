@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DesFormes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DesFormes/dist/DesFormes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

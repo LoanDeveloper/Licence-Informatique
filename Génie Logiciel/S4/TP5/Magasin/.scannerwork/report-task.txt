@@ -1,0 +1,6 @@
+projectKey=magasin_thomy_loan
+serverUrl=https://forge-sonar.iut-larochelle.fr
+serverVersion=8.9.2.46101
+dashboardUrl=https://forge-sonar.iut-larochelle.fr/dashboard?id=magasin_thomy_loan
+ceTaskId=AYYW7rv_XSfW_kBY_QEd
+ceTaskUrl=https://forge-sonar.iut-larochelle.fr/api/ce/task?id=AYYW7rv_XSfW_kBY_QEd

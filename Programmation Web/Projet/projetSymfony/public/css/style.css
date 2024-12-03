@@ -1,0 +1,342 @@
+body > header {
+    height: 12vw;
+    font-size: 3vw ;
+    opacity: 0.9 ;
+}
+body > header h1 {
+    font-size: 2em ;
+    margin: 0;
+}
+
+/*********** /layout ************/
+/***** Look ************/
+.border {
+    border: solid 1px #b6b6b6;
+}
+.rounded {
+    border-radius: 4px ;
+}
+.shadowed {
+    box-shadow: 0 1px 1px #444444;
+}
+.pill {
+    box-shadow: 0 1px 1px #444444;
+}
+.alert {
+    box-shadow: 0 1px 1px #444444;
+    text-align: center ;
+    font-weight: 700 ;
+    padding: 5px ;
+}
+.alert-ok {
+    background-color: #cfd8dc;
+    color: #727272;
+}
+.alert-warning {
+    background-color: #e53935;
+}
+.transition {
+    transition: all ease 0.5s ;
+}
+.button {
+    cursor: pointer ;
+}
+body {
+    font-family: roboto, 'Open Sans', sans-serif;
+    color: #444444;
+    background-color: #f0f0f0;
+}
+body > header {
+    background-color: #004d8b;
+    color: #f0f0f0;
+    padding: 2vw 2vw 0 2vw;
+    box-shadow: 0 2px 6px #444444;
+}
+
+body > main > section > div > h2 {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+/********* /Look ************************/
+/**** MENU ***************/
+body > header > nav {
+    background-color: transparent ;
+    height: auto ;
+    box-shadow: none ;
+}
+body > header > nav a {
+    transition: all ease 0.5s ;
+    border-radius: 3px 3px 0 0 ;
+}
+body > header > nav li {
+    display: inline-block;
+    line-height: 1;
+}
+body > header > nav a {
+    text-decoration: none ;
+    color: inherit ;
+    display: block ;
+    padding: 10px ;
+}
+body > header > nav a:hover {
+    background-color: #cfd8dc;
+}
+body > header > nav a:active {
+    background-color: #004d8b;
+}
+body > header > nav a.actuel {
+    background-color: #004d8b;
+}
+
+/**************** Footer ************************************/
+body > footer {
+    position: fixed;
+    bottom: 0 ;
+    left: 0 ;
+    display: flex ;
+    align-items: center ;
+    background-color: #004d8b;
+    color: #f0f0f0;
+    box-shadow: 0 -2px 6px #444444;
+    width: 100% ;
+    min-height: 2em ;
+    opacity: 0.9 ;
+    padding: 0 2vw ;
+}
+
+main {
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom: 100px;
+}
+
+select {
+    display: inline;
+}
+
+/********* Produit *********/
+.produit {
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin: 0.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.produit > img {
+    display: block;
+    width: 13vw;
+    margin: auto;
+    padding: 2vh;
+}
+
+.produit > h4, .produit > h3{
+    text-align: center;
+}
+.produit > p{
+    padding-bottom: 15px;
+}
+.produit > a {
+    background-color: #004d8b;
+    color: white;
+    font-weight: 600;
+    padding: 0.5vw;
+    text-align: center;
+    border-radius: 8%;
+    width: 22%;
+    margin-left: 38%;
+}
+
+.alone{
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.alone > section h2{
+    font-size: 3.5vw;
+    padding: 20px;
+}
+.alone > section {
+    padding-left: 20px;
+}
+.img_alone {
+    width: 30vw;
+    align-content: flex-start;
+    border: 2px solid;
+
+}
+.alone > section > a {
+    background-color: #004d8b;
+    color: white;
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 0.5vw;
+    margin: 1vw;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.commentaire{
+    width: 30vw;
+    padding-right: 5px;
+}
+.commentaire h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 20px;
+}
+.commentaire h4{
+    font-size: 1.25vw;
+}
+.star{
+    font-size: 1vw;
+    color: #ffcd00;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.date{
+    padding-top: 5px;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.vendre form, div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#vendre_produit_image{
+    padding-top:40px;
+}
+.vendre h2{
+    font-size: 1vw;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.vendre button{
+    width: 15%;
+    margin: auto;
+    background-color: #004d8b;
+    color:white;
+    border-radius: 2em;
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+/*** produits ***/
+
+.produits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 0.25em;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0 0 2em 0;
+}
+
+.produits section {
+    padding: 0em 3em 1em 2em;
+    width: 32%;
+    position: relative;
+}
+
+@media screen and (max-width: 980px) {
+    .produits {
+        display: block;
+    }
+
+    .produits section {
+        border-top-width: 1px !important;
+        border-left-width: 0 !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .produits section {
+        padding: 2.5em 1.5em 0.1em 5.5em ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .produits section {
+        padding: 2em 1.5em 0.1em 1.5em ;
+    }
+}
+
+/******* Accueil ********/
+.slogan{
+    font-size: 1vw;
+    padding-bottom: 10px;
+}
+.accueil > .categories{
+    font-size: 1vw;
+}
+.accueil > .categories section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+.accueil > .categories section a{
+    background-color: #004d8b;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 8%;
+}
+
+.accueil > section > h3{
+    font-weight: bold;
+}
+.accueil > hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: lightgrey;
+}
+.raison{
+    font-size: 1vw;
+}
+.raison ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.raison li{
+    background-color: #004d8b;
+    padding: 10px;
+    margin-top: 40px;
+    color: white;
+    border-radius: 6%;
+}
+
+/***** a propos *****/
+.a_propos{
+    font-size: 1vw;
+}
+
+.a_propos h2{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.a_propos h3{
+    font-size: 1.25vw;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

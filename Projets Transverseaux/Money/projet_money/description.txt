@@ -1,0 +1,36 @@
+Lien du projet : https://gitlab.univ-lr.fr/money/projet_money
+
+description du prof :
+
+Petit logiciel de comptabilité personnelle Elements :
+
++ logiciel de comptabilité (ajout-suppression-listing : titulaires des comptes,
+divers comptes, opérations, catégories, ...) / Petite interface graphique
+
++ Bases de données
+
++ Synthèses de comptes (répartition mensuelle, par catégorie, par titulaire, etc)
+
+
+Java :      -Personne
+            -Compte
+            -Gestion
+            -Interface
+
+Python :    -Analyse de Données de la BDD
+            -Génération de graphiques / tableaux -> selon les valeurs voulues
+            (argent gagné dans le temps, depense dans le mois...)
+
+BDD :       -Personne(_idpers_,nom,prenom)           //IN_famille
+            -DroitDeGestion(#personne,#compte) //relie compte à Personne lorsque Personne à accès au compte
+                                                 sans en être le propriétaire
+            -Compte(_NUMEROCOMPTE_,IBAN,intitulé,type,montant,#propriétaire)
+            -Transaction(#IBAN_crédité,#IBAN_débité,montant)
+            -Beneficiaire(_idbenef_,nom,prenom)       //Hors famille
+
+            DOMAIN pour :
+                -type
+                -idpers
+                -idbenef
+                -IBAN
+                -NUMEROCOMPTE

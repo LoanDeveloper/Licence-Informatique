@@ -1,0 +1,205 @@
+/*
+ *  Universite de la rochelle 1.0.0 by Beekom 
+ */
+/*  IE Browser */
+@keyframes slide {
+  from {
+    height: 0px; }
+  to {
+    height: 150px; } }
+@-moz-keyframes slide {
+  from {
+    height: 0px; }
+  to {
+    height: 150px; } }
+@-webkit-keyframes slide {
+  from {
+    height: 0px; }
+  to {
+    height: 150px; } }
+/*
+ *  Define Variables
+ *  
+ *  Universite de la Rochelle 1.0.0 by Beekom 
+ */
+/* ------------- SIZES  ------------- */
+/* ------------- ANIMATION  ------------- */
+/* ------------- FONTS  ------------- */
+/* ------------- FONT SIZES ------------- */
+/* ------------- COLORS ------------- */
+@supports (-ms-ime-align: auto) {
+  /******** Cross Flex *******/
+  .cross_flex {
+    padding: 0;
+    height: 100%; }
+
+  .cross_flex .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    width: 100% !important;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    height: 100%; }
+
+  .cross_flex .cross_container img {
+    height: 100%;
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+
+  .cross_fix {
+    padding-left: 0;
+    height: 100%; }
+
+  .cross_fix .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none; }
+
+  .post__item .post__picture img {
+    height: 100% !important;
+    width: auto !important; }
+
+  .video__item > .video__image {
+    overflow: hidden;
+    max-width: 43%; }
+
+  /********  Profil  *******/
+  .profile__container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-left: -335px;
+    overflow: hidden;
+    max-width: 690px; }
+
+  .profile__container .profile__item {
+    clip-path: none;
+    -webkit-clip-path: none;
+    flex: 0 0 230px;
+    margin-left: 0px;
+    max-width: 690px;
+    background-size: auto !important; } }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /******** Cross Flex *******/
+  .cross_flex {
+    padding: 0;
+    height: 100%; }
+
+  .cross_flex .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    width: 100% !important;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    height: 100%; }
+
+  .cross_flex .cross_container img {
+    height: 100%;
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+
+  .cross_fix {
+    padding-left: 0;
+    height: 100%; }
+
+  .cross_fix .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none; }
+
+  .post__item .post__picture img {
+    height: 100% !important;
+    width: auto !important; }
+
+  .video__item > .video__image {
+    overflow: hidden;
+    max-width: 43%; }
+
+  /********  Profil  *******/
+  .profile__container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-left: -335px;
+    overflow: hidden;
+    max-width: 690px; }
+
+  .profile__container .profile__item {
+    clip-path: none;
+    -webkit-clip-path: none;
+    flex: 0 0 230px;
+    margin-left: 0px;
+    max-width: 690px;
+    background-size: auto !important; } }
+@supports (-ms-accelerator: true) {
+  /******** Cross Flex *******/
+  .cross_flex {
+    padding: 0;
+    height: 100%; }
+
+  .cross_flex .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    width: 100% !important;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    height: 100%; }
+
+  .cross_flex .cross_container img {
+    height: 100%;
+    position: relative;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; }
+
+  .cross_fix {
+    padding-left: 0;
+    height: 100%; }
+
+  .cross_fix .cross_container {
+    clip-path: none;
+    -webkit-clip-path: none; }
+
+  .post__item .post__picture img {
+    height: 100% !important;
+    width: auto !important; }
+
+  .video__item > .video__image {
+    overflow: hidden;
+    max-width: 43%; }
+
+  /********  Profil  *******/
+  .profile__container {
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-left: -335px;
+    overflow: hidden;
+    max-width: 690px; }
+
+  .profile__container .profile__item {
+    clip-path: none;
+    -webkit-clip-path: none;
+    flex: 0 0 230px;
+    margin-left: 0px;
+    max-width: 690px;
+    background-size: auto !important; } }
+
+/*# sourceMappingURL=ie.css.map */

@@ -1,0 +1,16 @@
+principe d'encapsulation = tjrs qualifié les attributs en "private"
+static -> partagé par toutes les instances
+méthode surchargé = redifinition d'une méthode dans une sous-classe
+méthode redéfinie = surcharge mais réécrite différement (parametre différents par ex)
+
+ElementMM e = new CD()
+type static	type dynamique
+
+liaison dynamique : 
+	- concerne les méthodes d'instances redéfinis 
+	- pdt les phases de compilations et d'exécution
+
+méthode de classe : static
+	- dépends du type static de l'instance
+
+Une classe qui contient au moins une méthode abstraite doit être qualifiée abstraite.

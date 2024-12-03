@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="vendre">
+        <h2>Mettez un produit en vente ! </h2>
+
+        <section>
+            {{ form_start(form_produit) }}
+                {{ form_widget(form_produit) }}
+                <button type="submit">Mettre en vente !</button>
+            {{ form_end(form_produit) }}
+        </section>
+    </section>
+
+{% endblock %}

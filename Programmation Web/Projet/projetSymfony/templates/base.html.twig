@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}THOMY Loan{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" >
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+        <script type="text/javascript" src="{{ asset('js/main.js') }}" defer></script>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <h1>Vente Facile 🛒</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path('app_default') }}">Accueil</a></li>
+                <li><a href="{{ path('app_produits') }}">Nos produits</a></li>
+                <li><a href="{{ path('app_vendre') }}">Vendre un produit</a></li>
+                <li><a href="{{ path('app_a_propos') }}">A propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© THOMY Loan - Année Universitaire 2022 | 2023 - L2</p>
+    </footer>
+</body>
+</html>

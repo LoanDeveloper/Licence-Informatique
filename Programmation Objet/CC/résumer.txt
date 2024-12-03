@@ -1,0 +1,17 @@
+Exercice 1 : 
+	Probleme avec TestRepertoire : element fils fic1 introuvable...
+	Sinon tout le reste fonctionne
+
+Exercice 2 : 
+	Tout les tests fonctionnent
+
+Exercice 3 : 
+	Les premiers testent fonctionnent sauf : 
+		Probleme avec TestRecherche : resultat incorrect de la recherche avec 'test'
+
+Exercice 4 : 
+	Tout les tests fonctionnent
+
+Exercice 5 :
+	Probleme avec TestChemin : le chemin relatif devrait contenir uniquementNoeud{nom=rep1} (ligne 66)
+	Les tests précedents fonctionnent

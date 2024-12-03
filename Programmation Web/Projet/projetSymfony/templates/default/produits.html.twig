@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section>
+        <div>
+            <h2>Nos produits</h2>
+            <div class="produits">
+                {% for p in produits %}
+                <section class="produit">
+                    <img src="{{ asset('images/' ~ p.image) }}" alt="">
+                    <h3>{{ p.nom }}</h3>
+                    <h4>{{ p.prix }} €</h4>
+                    <p>{{ p.description }}</p>
+                    <a href="{{ path('app_produit', {'id' : p.id}) }}">En savoir plus</a>
+                </section>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section>
+        {% if produit.categorie != null %}
+        <p>Catégorie : {{ produit.categorie.nom }}</p>
+        {% endif %}
+    </section>
+    <section>
+        <section class="alone">
+            <img src="{{ asset('images/' ~ produit.image) }}" alt="" class="img_alone">
+
+            <section class="description">
+                <h2>{{ produit.nom }}</h2>
+                <p>{{ produit.description }}</p>
+                <p>Tags :
+                    {% for t in produit.tags%}
+                        {{ '|' ~ t.nom ~ '|'}}
+                    {% endfor %}
+                </p>
+                <a href="#">Ajouter au panier</a>
+            </section>
+
+            <section class="commentaire">
+                <h3>Commentaires :</h3>
+
+                {% for c in commentaires %}
+                    <section>
+                        <h4>{{ c.titre }}</h4>
+                        <p class="star">{{ c.note }} / 5 ★</p>
+                        <p>{{ c.texte }}</p>
+                        <p class="date">{{ c.date|date('d-m-Y') }}</p>
+                    </section>
+                {% endfor %}
+            </section>
+
+        </section>
+
+        <section>
+            <h2>Ajoutez un commentaire :</h2>
+
+            {{ form_start(form_commentaire) }}
+                {{ form_widget(form_commentaire) }}
+                <button type="submit">Mettre en ligne</button>
+            {{ form_end(form_commentaire) }}
+        </section>
+  </section>
+
+{% endblock %}
